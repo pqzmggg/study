@@ -1,2 +1,5 @@
 # web 컨테이너 생성하면서 db 컨테이너와 연결
 $ docker run --name web -d -p 80:80 --link db:db nginx
+
+# 실행 중인 컨테이너 bash 쉘 접속
+$ docker exec -lt {컨테이너ID} bash
